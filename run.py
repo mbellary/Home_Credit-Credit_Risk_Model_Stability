@@ -3,10 +3,9 @@
 import polars as pl
 import lightgbm as lgb
 
-from pathlib import Path
 from sklearn.metrics import roc_auc_score
 from catboost import CatBoostClassifier, Pool
-from preproc import preprocessor
+from src.preproc import preprocessor
 
 params = {
     "boosting_type": "gbdt",
